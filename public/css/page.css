@@ -1,0 +1,52 @@
+html, body {
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: #000;
+	font-family: Helvetica;
+}
+
+#wrapper {
+	padding: 50px 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+header {
+	margin-top: -50px;
+	height: 50px;
+	background-color: rgb(40, 40, 40);
+	text-align: center;
+	color: #fff;
+}
+header h1 {
+	line-height: 1em;
+	padding: 10px 0 0 0;
+	margin: 0;
+}
+#content {
+	min-height: 100%;
+}
+
+.box {
+	display: block;
+	width: 90%;
+	margin: 30px auto;
+	padding: 4em 0;
+	text-align: center;
+}
+.box.alive {
+	background-color: rgb(66, 139, 66);
+	color: #EEFFD5;
+}
+.box.dead {
+	background-color: rgb(113, 5, 5);
+	color: rgba(255, 255, 255, 0.5)
+}
+.box h1 {
+	margin: 0;
+	padding: 0;
+	line-height: 1em;
+}

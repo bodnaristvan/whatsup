@@ -1,0 +1,11 @@
+{
+  "name": "whatsup",
+  "version": "0.0.1",
+  "description": "Check if configured hosts are online",
+  "main": "app.js",
+  "author": "Bodnar Istvan",
+  "dependencies": {
+    "express": "^4.10.7",
+    "handlebars": "^2.0.0"
+  }
+}

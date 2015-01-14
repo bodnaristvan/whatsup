@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>What's up?</title>
+		<link rel="stylesheet" href="/public/css/page.css" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>What's up?</h1>
+			</header>
+			{{#if hosts}}
+				{{#each hosts}}
+					<div class="box {{#if isAlive}}alive{{else}}dead{{/if}}">
+						<h1>{{displayName}}</h1>
+						<small>{{ip}}</small>
+					</div>
+				{{/each}}
+			{{else}}
+				<div class="results-success">
+					No hosts configured!
+				</div>
+			{{/if}}
+		</div>
+	</body>
+</html>

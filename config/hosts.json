@@ -1,0 +1,10 @@
+[
+	{
+		"ip": "127.0.0.1",
+		"displayName": "localhost - example"
+	},
+	{
+		"ip": "192.168.0.1",
+		"displayName": "router - example"
+	}
+]
