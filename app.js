@@ -30,6 +30,23 @@ app.get('/', function (req, res) {
 	res.send(renderer(renderData));
 });
 
+app.get('/data.json', function (req, res) {
+	'use strict';
+
+	// merge host data with alive state to get renderable a datastructure
+	var renderData = hosts.map(function (host) {
+		// get host data from the config
+		// var hostData = Object.create(host); // wtf?
+		var hostData = {ip: host.ip, displayName: host.displayName};
+		// check upstate from the hostCache
+		hostData.isAlive = hostCache[host.ip] || false;
+		return hostData;
+	});
+
+	// return data as json
+	res.send(renderData);
+});
+
 // static file serving
 app.use('/public', express.static(__dirname + '/public'));
 
